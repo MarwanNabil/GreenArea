@@ -15,7 +15,6 @@ import CouncilChat from "./pages/council/CouncilChat";
 import CouncilProfile from "./pages/council/CouncilProfile";
 import CouncilRegister from "./pages/council/CouncilRegister";
 
-
 import AddCounselor from "./pages/admin/adminComponents/AddCounselor";
 import AddQuestion from "./pages/admin/adminComponents/AddQuestion";
 import DeleteCounselor from "./pages/admin/adminComponents/DeleteCounselor";
@@ -26,7 +25,6 @@ import ViewStudent from "./pages/admin/adminComponents/ViewStudent";
 import AddStudent from "./pages/admin/adminComponents/AddStudent";
 import DeleteStudent from "./pages/admin/adminComponents/DeleteStudent";
 import Home from "./pages/Home";
-
 
 import LoginStudent from "./pages/student/LoginStudent";
 import StudentDashboard from "./pages/student/StudentDashboard";
@@ -39,104 +37,223 @@ import Test from "./pages/student/Test";
 const App = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: <> <NavBar /> <HomePage /></>,
+      path: "/login",
+      element: (
+        <>
+          {" "}
+          <NavBar /> <HomePage />
+        </>
+      ),
     },
     {
-      path: "/home",
-      element:<> <Home /></>,
+      path: "/",
+      element: (
+        <>
+          {" "}
+          <Home />
+        </>
+      ),
     },
     {
       path: "/admin",
-      element: <> <NavBar /> <AdminPage /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <AdminPage />
+        </>
+      ),
     },
     {
       path: "/admin/AddCounselor",
-      element: <> <NavBar /> <AddCounselor /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <AddCounselor />
+        </>
+      ),
     },
     {
       path: "/admin/AddQuestion",
-      element: <> <NavBar /> <AddQuestion /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <AddQuestion />
+        </>
+      ),
     },
     {
       path: "/admin/AddStudent",
-      element: <> <NavBar /> <AddStudent /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <AddStudent />
+        </>
+      ),
     },
     {
       path: "/admin/DeleteCounselor",
-      element: <> <NavBar /> <DeleteCounselor /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <DeleteCounselor />
+        </>
+      ),
     },
     {
       path: "/admin/DeleteQuestion",
-      element: <> <NavBar /> <DeleteQuestion /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <DeleteQuestion />
+        </>
+      ),
     },
     {
       path: "/admin/DeleteStudent",
-      element: <> <NavBar /> <DeleteStudent /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <DeleteStudent />
+        </>
+      ),
     },
     {
       path: "/admin/ViewCounselor",
-      element: <> <NavBar /> <ViewCounselor /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <ViewCounselor />
+        </>
+      ),
     },
     {
       path: "/admin/ViewQuestion",
-      element: <> <NavBar /> <ViewQuestion /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <ViewQuestion />
+        </>
+      ),
     },
     {
       path: "/admin/ViewStudent",
-      element: <>  <NavBar /> <ViewStudent /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <ViewStudent />
+        </>
+      ),
     },
     {
       path: "/council",
-      element: <> <NavBar /> <CouncilPage /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <CouncilPage />
+        </>
+      ),
     },
     {
       path: "/council/student-score",
-      element: <> <NavBar /> <StudentScore /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <StudentScore />
+        </>
+      ),
     },
     {
       path: "/council/system-feedback",
-      element: <> <NavBar /> <SystemFeedback /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <SystemFeedback />
+        </>
+      ),
     },
     {
       path: "/council/chat",
-      element: <> <NavBar /> <CouncilChat /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <CouncilChat />
+        </>
+      ),
     },
     {
       path: "/council/profile",
-      element: <> <NavBar /> <CouncilProfile /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <CouncilProfile />
+        </>
+      ),
     },
     {
       path: "/councilregister",
-      element: <> <NavBar /> <CouncilRegister /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <CouncilRegister />
+        </>
+      ),
     },
     {
       path: "/loginstudent",
-      element: <> <NavBar /> <LoginStudent /></>,
+      element: (
+        <>
+          {" "}
+          <NavBar /> <LoginStudent />
+        </>
+      ),
     },
     {
       path: "/studentprofile",
-      element: <><StudentProfile /></>,
+      element: (
+        <>
+          <StudentProfile />
+        </>
+      ),
     },
     {
       path: "/studentdashboard",
-      element: <><StudentDashboard /></>,
+      element: (
+        <>
+          <StudentDashboard />
+        </>
+      ),
     },
     {
       path: "/studentdashboard/viewscore",
-      element: <><ViewScore /></>,
+      element: (
+        <>
+          <ViewScore />
+        </>
+      ),
     },
     {
       path: "/studentdashboard/test",
-      element: <><Test /></>,
+      element: (
+        <>
+          <Test />
+        </>
+      ),
     },
     {
       path: "/studentdashboard/viewchat",
-      element: <><ViewChat /></>,
+      element: (
+        <>
+          <ViewChat />
+        </>
+      ),
     },
     {
       path: "/studentdashboard/feedback",
-      element: <><Feedback /></>,
+      element: (
+        <>
+          <Feedback />
+        </>
+      ),
     },
   ]);
 

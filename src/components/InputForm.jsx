@@ -5,7 +5,7 @@ const Inputform = (props) => {
     <div className="flex flex-col px-2 gap-y-1">
       <Text className="text-xl font-bold">{props.children}</Text>
       <input
-        type="text"
+        type={props.type ? props.type : "text"}
         id={props.children}
         name={props.children}
         placeholder={"Enter your " + props.children}

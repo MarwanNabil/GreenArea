@@ -7,7 +7,32 @@ import Text from "../components/text";
 //images
 import Cover from "./counseling.jpg";
 
+//util
+import { useNavigate } from "react-router-dom";
+
 const HomePage = () => {
+  const navigate = useNavigate();
+  let id = "",
+    password = "";
+
+  const onIdChange = (event) => {
+    id = event.target.value;
+  };
+
+  const onPasswordChange = (event) => {
+    password = event.target.value;
+  };
+
+  const onLogin = () => {
+    if (id === "201900795") {
+      navigate("/admin");
+    } else if (id === "201900633") {
+      navigate("/studentdashboard");
+    } else {
+      navigate("/council");
+    }
+  };
+
   return (
     <div className="flex flex-col gap-y-11">
       <Header>Login</Header>
@@ -19,9 +44,11 @@ const HomePage = () => {
           One step further upon success.
         </Text>
         <form className="flex flex-col gap-y-11 ">
-          <Inputform>{"ID"}</Inputform>
-          <Inputform>{"Password"}</Inputform>
-          <Button>Login</Button>
+          <Inputform onChangeCapture={onIdChange}>{"ID"}</Inputform>
+          <Inputform onChangeCapture={onPasswordChange} type="password">
+            {"Password"}
+          </Inputform>
+          <Button onClick={onLogin}>Login</Button>
         </form>
       </div>
     </div>
