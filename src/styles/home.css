@@ -1,0 +1,100 @@
+.bg-img {
+
+    height: 100vh;
+    background: linear-gradient(rgba(255, 230, 2, 0.4), rgb(0, 163, 43, 0.4)),
+        url("../images/Providing-World-Class-Education-1200x600.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-color {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.text-black{
+    color: black;
+}
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.all-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #252A34;
+}
+.box{
+    border-radius: 5px;
+    border: #fff solid 5px;
+    box-shadow: 0 0 2px #252a34;
+    background-color: #fff;
+    transition: 500ms ease;
+}
+.box:hover{
+    cursor: pointer;
+
+    transform: scale(1.1);
+    
+}
+.counselor-sec {
+    background-color: #EAEAEA;
+}
+.counselor-name{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.counselor-dep{
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.dark-color{
+    color: #252A34;
+}
+.bg-img-sec{
+    background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),
+    url("../images/CUE_international-day-of-ed2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+.bg-footer{
+    background-color: #252A34;
+
+}
+.check,
+.check input{
+    cursor: pointer;
+
+}
+.bg-img-student{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.7)),
+        url("../images/studentdashboard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.studentprofile{
+    background: url('../images/profilestudent.png') ;
+    background-size:cover ;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+.studentprofile-img{
+    background: url('../images/profilestudent.png') ;
+    background-size:cover ;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}

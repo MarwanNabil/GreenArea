@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bg-gray {
+    background-color: rgba(229, 229, 229, 0.7);
+}
+.bg-gray-light {
+    background-color: rgba(229, 229, 229, 0.3);
+}
+
+.w-45 {
+    width: 48%;
+}
+.he-80{
+    height: 82vh;
+}
+.color-p{
+    color:rgb(0, 163, 48);
+}
+.color-link{
+    color: rgb(235, 211, 1);
+}
